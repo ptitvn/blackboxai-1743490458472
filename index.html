@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tài Chính Cá Nhân</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="beginning">
+      <div class="content">📒 Tài Chính Cá Nhân K24_Rikkei</div>
+      <div class="head">
+        <button class="logout-button">Đăng xuất</button>
+        <a href=""><i class="fa-solid fa-chevron-down"></i></a>
+      </div>
+    </div>
+    <div class="tbody">
+      <div class="main">
+        <h2>🎯 Kiểm soát chi tiêu thông minh</h2>
+        <p>Theo dõi ngân sách và thu chi hằng tháng dễ dàng</p>
+      </div>
+      <div class="auxiliary">
+        <div class="content">📊 Quản Lý Tài Chính Cá Nhân</div>
+        <div class="container">
+          <span> 📅 Chọn tháng:</span>
+          <input type="date" id="month-select" />
+        </div>
+        
+        <div class="container2">
+          <span>💰 Ngân sách tháng:</span>
+          <input type="number" id="budget-amount" placeholder="VD 5000000" />
+          <button id="save-budget">Lưu</button>
+        </div>
+        <div class="container3">
+          <p>Số tiền còn lại</p>
+          <div id="month-remaining">0 VND</div>
+        </div>
+        <div class="container4">
+          <p>💼 Quản lý danh mục (theo tháng)</p>
+          <div class="enter">
+            <input type="text" placeholder="Tên danh mục" />
+            <input type="number" placeholder="Giới hạn (VND)" />
+            <button>Thêm danh mục</button>
+          </div>
+          <div class="content2">
+            <div class="item">tiền phòng-Giới hạn: 2,000,000</div>
+            <div class="item_button">
+              <button>Sửa</button>
+              <button>Xóa</button>
+            </div>
+          </div>
+        </div>
+        <div class="container5">
+          <input type="number" placeholder="Số tiền" />
+          <div>Tiền chi tiêu</div>
+          <input type="text" placeholder="Ghi chú" />
+          <button>Thêm</button>
+        </div>
+        <div class="container6">
+          <p>🧾 Lịch sử giao dịch</p>
+          <div class="select">
+            <div>
+              <i class="fas fa-search"></i>
+              <input type="text" placeholder="tìm nội dung" />
+            </div>
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            <div>sắp xếp theo giá</div>
+          </div>
+          <div class="content3">
+            <div class="content2">
+              <div class="item">tiền phòng-đóng tiền phòng tháng 3: 2,000,000</div>
+              <div class="item_button"><button>Xóa</button></div>
+            </div>
+          </div>
+          <div class="move">
+            <button class="item">Previous</button>
+            <button class="button">1</button>
+            <button class="item2">Next</button>
+          </div>
+        </div>
+        <div class="container7" id="budget-warning">
+          <p>Danh mục"tiền ăn" đã vượt giới hạn: 1,060,000 / 1,000,000 VND</p>
+        </div>
+        <div class="container8">
+          <p>📆 Thống kê chi tiêu các tháng</p>
+          <div class="item">
+            <span>tháng</span>
+            <span>chi tiêu</span>
+            <span>Ngân sách</span>
+            <span>Trạng thái</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tfoot">
+      <p>© 2025 Quản Lý Tài Chính Cá Nhân. by Quốc Hai!</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
